@@ -1,9 +1,12 @@
 .App {
   text-align: center;
+ 
 }
 
-.iteration1{
+
+.iteration1 {
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
 }
+
