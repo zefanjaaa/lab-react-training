@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import magic from './spongbobmagic.jpeg'
+import patrick from './HD_image_of_Patrick_Star.jpg'
 import './App.css';
+import IdCard from './components/IdCard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>React Training Lab</h1>
+      {/* Iteration 1 */}
+      <h3><b>Iteration 1</b></h3>
+      <IdCard 
+        firstName='Spongebob'
+        lastName='Squarepants'
+        gender='They'
+        height={'100'}
+        birth={'1000 - 11 - 11'}
+        picture={magic}
+      />
+
+      <IdCard
+        firstName='Patrick'
+        lastName='Star'
+        gender='They'
+        height={'101'}
+        birth={'1000 - 11 -11'}
+        picture={patrick}
+      />
+      
     </div>
   );
 }
